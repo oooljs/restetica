@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restetica</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Manrope:wght@400;500;600&display=swap" rel="preload" as="style" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" crossorigin>
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col header__search">
+            <div class="search">
+              <input id="search" type="text" class="search__input" placeholder="Поиск">
+              <button class="btn">Искать</button>
+            </div>
+          </div>
+          
+          <div class="col header__logo">
+            <a href="" class="logo">
+              <img src="./img/logo.svg" alt="">
+            </a>
+          </div>
+
+          <div class="col social header__social">
+            <a href=""><svg><use xlink:href="./img/sprite.svg#whatsapp"></use></svg></a>
+            <a href="" class="_vk"><svg><use xlink:href="./img/sprite.svg#vk"></use></svg></a>
+            <a href=""><svg><use xlink:href="./img/sprite.svg#telegram"></use></svg></a>
+          </div>
+        
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar__list" data-nav>
+          <li class="navbar__item _inner">
+            <a href="">О клинике</a>
+            <span>
+              <ul class="second-menu">
+                <li><a href="">О нас</a></li>
+                <li><a href="">Специалисты</a></li>
+                <li><a href="">Документы и лицензии</a></li>
+                <li class="_inner2">
+                  <a href="">Бренды и аппараты</a>
+                  <ul class="third-menu">
+                    <li><a href="">MOTUS AY</a></li>
+                    <li><a href="">INMODE</a></li>
+                    <li><a href="">UltraFormer III</a></li>
+                    <li><a href="">HydraFacial</a></li>
+                    <li><a href="">GeneO+</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Фотогалерея</a></li>
+              </ul>
+            </span>
+          </li>
+          <li class="navbar__item"><a href="">Услуги</a></li>
+          <li class="navbar__item"><a href="">Акции</a></li>
+          <li><a href="">Прайс</a></li>
+          <li><a href="">Новости</a></li>
+          <li class="navbar__item"><a href="">Нам доверяют</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <a class="btn btn-modal" href="">Заказать звонок</a>
+      </div>
+    </nav>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span class="burger__line"></span>
+    </button>
+
+    <main>
+
+      <div class="page-404"></div>
+
+    </main>
+
+
+  </div><!-- End .wrapper -->  
+  
+  
+  <button class="totop" title="Наверх">
+    <svg>
+      <use xlink:href="./img/sprite.svg#totop"></use>
+    </svg>
+  </button> 
+  
+  <div class="modal hidden">
+    <div class="modal__wrap">
+        <button class="modal__close-btn" aria-label="Закрыть">×</button>
+        <div class="modal__content">
+          <h3 class="modal__title">Оставьте свои данные</h3>
+          <p class="modal__text">Мы свяжемся с вами и ответим на все вопросы</p>
+          <form>
+            <div class="form">
+              <div class="form__group">
+                <input class="input" type="text" placeholder="Ваше имя">
+              </div>
+              <div class="form__group">
+                <input class="input" type="tel" placeholder="Номер телефона">
+              </div>
+              <div class="form__group">
+                <textarea class="input" rows="4" placeholder="Ваш комментарий"></textarea>
+              </div>
+              <div class="form__group">
+                <div class="form__agree">Нажимая на кнопку, я даю свое согласие на обработку моих персональных данных</div>
+              </div>
+              <div class="form__group form__group-2btn">
+                <button class="btn">Отправить</button>
+                <a href="" class="link-arrow">Или написать нам <br>в WhatsApp</a>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+
+
+  <script src="./js/main.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+</body>
+</html>

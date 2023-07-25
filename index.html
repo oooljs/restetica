@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restetica</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Manrope:wght@400;500;600&display=swap" rel="preload" as="style" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" crossorigin>
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col header__search">
+            <div class="search">
+              <input id="search" type="text" class="search__input" placeholder="Поиск">
+              <button class="btn">Искать</button>
+            </div>
+          </div>
+          
+          <div class="col header__logo">
+            <a href="" class="logo">
+              <img src="./img/logo.svg" alt="">
+            </a>
+          </div>
+
+          <div class="col social header__social">
+            <a href=""><svg><use xlink:href="./img/sprite.svg#whatsapp"></use></svg></a>
+            <a href="" class="_vk"><svg><use xlink:href="./img/sprite.svg#vk"></use></svg></a>
+            <a href=""><svg><use xlink:href="./img/sprite.svg#telegram"></use></svg></a>
+          </div>
+        
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar__list" data-nav>
+          <li class="navbar__item _inner">
+            <a href="">О клинике</a>
+            <span>
+              <ul class="second-menu">
+                <li><a href="">О нас</a></li>
+                <li><a href="">Специалисты</a></li>
+                <li><a href="">Документы и лицензии</a></li>
+                <li class="_inner2">
+                  <a href="">Бренды и аппараты</a>
+                  <ul class="third-menu">
+                    <li><a href="">MOTUS AY</a></li>
+                    <li><a href="">INMODE</a></li>
+                    <li><a href="">UltraFormer III</a></li>
+                    <li><a href="">HydraFacial</a></li>
+                    <li><a href="">GeneO+</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Фотогалерея</a></li>
+              </ul>
+            </span>
+          </li>
+          <li class="navbar__item"><a href="">Услуги</a></li>
+          <li class="navbar__item"><a href="">Акции</a></li>
+          <li><a href="">Прайс</a></li>
+          <li><a href="">Новости</a></li>
+          <li class="navbar__item"><a href="">Нам доверяют</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <a class="btn btn-modal" href="">Заказать звонок</a>
+      </div>
+    </nav>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span class="burger__line"></span>
+    </button>
+
+    <main class="main">
+
+      <div class="wrapper__slider">
+        <div class="wrapper__slider-image"></div>
+        <div class="container">
+
+          
+          <div class="slider-big">
+            
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-big__text">
+                  <section>
+                    <h2 class="slider-big__title">Пространство красоты и молодости</h2>
+                    <p>Пространство красоты и молодости</p>
+                    <a href="#" class="btn">Записаться</a>
+                  </section>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="slider-big__text">
+                  <section>
+                    <h2 class="slider-big__title">Possimus facere dolorum illo adipisci</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+                    <a href="#" class="btn">Подробнее</a>
+                  </section>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="slider-big__text">
+                  <section>
+                    <h2 class="slider-big__title">Dolorum ipsum dolor sit amet consectetur</h2>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <a href="#" class="btn">Узнать больше</a>
+                  </section>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="slider-counter"></div>
+         
+          </div>
+        
+        </div>
+      </div>
+
+      <section class="promo promo-hover anim-left">
+        <div class="container">
+          <div class="row">
+            <div class="col promo__text _background-color">
+              <header><h2 class="promo__title">Подбор процедуры</h2></header>
+              <p class="promo__subtitle">Помощь в подборе оптимального ухода для вашей кожи</p>
+              <div class="promo-select">
+                <ul class="list-drops">
+                  <li>
+                    <a class="link" href="">Я хочу избавиться от:</a>
+                  </li>
+                  <li>
+                    <a class="link" href="">Меня интересует:</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-7 promo__img">
+              <img src="./img/promo.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_services">
+        <div class="container">
+          <header><h2 class="section__title">Услуги клиники</h2></header>
+          <p class="section__subtitle">Слышим Ваши пожелания и всегда стремимся реализовать их</p>
+          <div class="row">
+            <div class="col">
+              <div class="service service_big">
+                <div class="service__img"><img src="./img/services/s1.jpg" alt=""></div>
+                <div class="service__text">
+                  <div class="service__title">Эстетическая косметология</div>
+                  <ul class="service__list">
+                    <li><a href="">Комплексная чистка</a></li>
+                    <li><a href="">Ультразвуковая чистка</a></li>
+                    <li><a href="">Пилинги</a></li>
+                    <li><a href="">Уходовые процедуры на косметике Maria Galland и Anna lotan</a></li>
+                    <li><a href="">Фонофорез</a></li>
+                    <li><a href="">Микротоковая терапия</a></li>
+                    <li><a href="">Парафинотерапия</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div data-lag=".2" class="col">
+              <div class="service">
+                <div class="service__img"><img src="./img/services/s2.jpg" alt=""></div>
+                <div class="service__text">
+                  <div class="service__title">Аппаратная косметология</div>
+                  <ul class="service__list">
+                    <li><a href="">Аппаратный лифтинг</a></li>
+                    <li><a href="">Аппаратное омоложение</a></li>
+                    <li><a href="">Лазерная эпиляция</a></li>
+                    <li><a href="">Удаление пигментов</a></li>
+                    <li><a href="">Удаление сосудов</a></li>
+                    <li><a href="">Аппаратный уход терапия</a></li>
+                    <li><a href="">LED-терапия</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="./img/services/s5.jpg" alt=""></div>
+                <div class="service__text">
+                  <div class="service__title">Услуги по телу</div>
+                  <ul class="service__list">
+                    <li><a href="">Безоперационная липосакция и лифтинг</a></li>
+                    <li><a href="">Массаж</a></li>
+                    <li><a href="">Обертывание</a></li>
+                    <li><a href="">Прокол ушей</a></li>
+                    <li><a href="">Коррекция фигуры</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="service">
+                <div class="service__img"><img src="./img/services/s3.jpg" alt=""></div>
+                <div class="service__text">
+                  <div class="service__title">Инъекционная косметология</div>
+                  <ul class="service__list">>
+                    <li><a href="">Бланширование</a></li>
+                    <li><a href="">Мезотерапия</a></li>
+                    <li><a href="">Плазмотерапия</a></li>
+                    <li><a href="">Биоревитализация</a></li>
+                    <li><a href="">Контурная пластика</a></li>
+                    <li><a href="">Ботулинотерапия</a></li>
+                    <li><a href="">Коллагенотерапия</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="./img/services/s6.jpg" alt=""></div>
+                <div class="service__text">
+                  <div class="service__title">Мужская <br>косметология</div>
+                  <ul class="service__list">
+                    <li><a href="">Уходовые процедуры</a></li>
+                    <li><a href="">Аппаратные процедуры</a></li>
+                    <li><a href="">Инъекционные процедуры</a></li>
+                    <li><a href="">Лечение волос</a></li>
+                    <li><a href="">Массаж</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="service">
+                <div class="service__img"><img src="./img/services/s4.jpg" alt=""></div>
+                <div class="service__text">
+                  <div class="service__title">Трихология</div>
+                  <ul class="service__list">
+                    <li><a href="">Плазмотерапия</a></li>
+                    <li><a href="">Мезотерапия</a></li>
+                    <li><a href="">Микротоковая терапия</a></li>
+                    <li><a href="">Дарсонваль</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="./img/services/s7.jpg" alt=""></div>
+                <div class="service__text">
+                  <div class="service__title">Интимные <br>процедуры</div>
+                  <ul class="service__list">
+                    <li><a href="">Интимное омоложение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo promo_right promo-hover anim-right">
+        <div class="container">
+          <div class="row">
+            <div class="col promo__text _background-color promo-hover__trigger">
+              <header><h2 class="promo__title">Гарантируем качество</h2></header>
+              <div>
+                <ul class="list-drops">
+                  <li>
+                    <h4>Специалисты</h4>
+                    <p>Прием ведут дипломированные специалисты с медицинским образованием – врачи-дерматовенерологи, косметологи, мастера лазерной эпиляции, массажисты.</p>
+                  </li>
+                  <li>
+                    <h4>Забота</h4>
+                    <p>Мы слышим Ваши пожелания и всегда стремимся реализовать их. <br>Безопасность. Ваше здоровье для нас служит главным приоритетом.</p>
+                  </li>
+                  <li>
+                    <h4>Индивидуальные решения</h4>
+                    <p>Персонализированный и комплексный подход к каждому клиенту, отсутствие навязанных процедур.</p>
+                  </li>
+                  <li>
+                    <h4>Лицензии и сертификаты</h4>
+                    <p>Все оборудование и используемые препараты сертифицированы в РФ, а их большая часть также имеет сертификаты США (FDA)и стран Европы.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 promo__text _hidden">
+              <header aria-hidden="true"><h2 class="promo__title">Гарантируем качество</h2></header>
+              <ul class="list-drops">
+                <li>
+                  <h4>Удобство</h4>
+                  <p>Клиника расположена в историческом центре города Уфы, Уфимский Кремль. Имеется закрытая парковка для вашего автомобиля.</p>
+                </li>
+                <li>
+                  <h4>Технологии</h4>
+                  <p>В клинике Restetica только передовое, оригинальное оборудование и новейшие модели аппаратов: Inmode, Deka Motus AY, Deka Onda, Ultraformer III, Geneo+, Hydrafacial и др. для лучших результатов наших клиентов. </p>
+                </li>
+                <li>
+                  <h4>Гарантии</h4>
+                  <p>Restetica гарантирует осуществление выполнения медицинских услуг в соответствии с требованиями юридических, профессиональных и морально-этических норм, соблюдение высочайшего качества оказания медицинской помощи, обеспечение безопасности оказываемой услуги и соблюдение обязательств, указанных в договоре на оказание платных медицинских услуг.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 promo__img">
+              <img src="./img/promo-2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_questions anim-fade">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <header><h2 class="section__title gold">Есть вопросы?</h2></header>
+              <p class="section__subtitle">Оставьте свои данные, и мы свяжемся с вами в течении 5 минут</p>
+              <ol class="list-count">
+                <li>Вашу заявку примет наш администратор клиники</li>
+                <li>В течении 5 минут, администратор перезвонит по указанному номеру телефона</li>
+                <li>Ответят на все ваши вопросы, а так же назначат время и дату посещения клиники</li>
+              </ol>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form">
+                <div class="form__group">
+                  <input class="input" type="text" placeholder="Ваше имя">
+                </div>
+                <div class="form__group">
+                  <input class="input" type="tel" placeholder="Номер телефона">
+                </div>
+                <div class="form__group">
+                  <textarea class="input" rows="3" placeholder="Ваш комментарий"></textarea>
+                </div>
+                <div class="form__group">
+                  <div class="form__agree">Нажимая на кнопку, я даю свое согласие на обработку моих персональных данных</div>
+                </div>
+                <div class="form__group">
+                  <button class="btn">Заказать звонок</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo promo_t2 anim-left">
+        <div class="container">
+          <div class="row">
+            <div class="col promo__text _background-color">
+              <header><h2 class="promo__title">Наша клиника</h2></header>
+              <div class="content">
+                <p>Клиника красоты и молодости Restetica — это пространство эстетики, где к каждому найдут <span class="gold">индивидуальный подход.</span></p> 
+                <p>Мы используем <span class="gold">инновационные методики</span>, лицензированные препараты, а так же линейка профессионального ухода класса <span class="gold">премиум</span>, подобранные специально для раскрытия вашей естественной красоты. Мы ответственно подходим к нашему делу.</p> 
+                <p>Многие процедуры выполняются на <span class="gold">уникальных</span> и единичных аппаратах, которые вы не встретите в других клиниках нашего города.</p>
+              </div>
+              <a class="link-arrow" href="">Узнать подробнее</a>
+            </div>
+            <div class="col promo__img anim-fade">
+              <img src="./img/promo-3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_specialists">
+        <div class="container">
+          <header><h2 class="section__title">Специалисты RESTETICA</h2></header>
+          <p class="section__subtitle">Прием ведут только дипломированные специалисты с медицинским образованием</p>
+          <div class="row">
+            <div class="col anim-up">
+              <a class="specialist" href="">
+                <div class="specialist__img">
+                  <img src="./img/spec-1.png" alt="">
+                  <div class="specialist__img-bg"></div>
+                </div>
+                <div class="specialist__name">Аминева Гульнара Закиряновна</div>
+                <div class="specialist__subtitle">Врач дерматолог, косметолог, трихолог</div>
+              </a>
+            </div>
+            <div class="col anim-up">
+              <a class="specialist" href="">
+                <div class="specialist__img">
+                  <img src="./img/spec-2.png" alt="">
+                  <div class="specialist__img-bg"></div>
+                </div>
+                <div class="specialist__name">Гафиятуллина Ирина Науфалевна</div>
+                <div class="specialist__subtitle">Врач дерматолог, косметолог</div>
+              </a>
+            </div>
+            <div class="col-12 col-xl-4 anim-right">
+              <div class="colorblock _background-color">
+                <div class="title-gold">Наши специалисты</div>
+                <p>Прием ведут квалифицированные врачи с большим опытом работы в своих направлениях</p>
+                <a class="link-arrow" href="">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_brands">
+        <div class="container">
+          <header><h2 class="section__title">В нашей клинике мы используем</h2></header>
+          <p class="section__subtitle">Все оборудование и используемые препараты сертифицированы в РФ, а их большая часть также имеет сертификаты США (FDA) и стран Европы</p>
+          <div class="row row-cols-3 row-cols-xl-4">
+            <div class="col"><a href="" class="brand-link"><img src="./img/brands/inmode.png" alt=""></a></div>
+            <div class="col"><a href="" class="brand-link"><img src="./img/brands/deka.png" alt=""></a></div>
+            <div class="col"><a href="" class="brand-link"><img src="./img/brands/smartxide.png" alt=""></a></div>
+            <div class="col"><a href="" class="brand-link"><img src="./img/brands/onda.png" alt=""></a></div>
+            <div class="col"><a href="" class="brand-link"><img src="./img/brands/chwarzy.png" alt=""></a></div>
+            <div class="col"><a href="" class="brand-link"><img src="./img/brands/motusay.png" alt=""></a></div>
+            <div class="col"><a href="" class="brand-link"><img src="./img/brands/ultraformer.png" alt=""></a></div>
+            <div class="col"><a href="" class="brand-link"><img src="./img/brands/hydrafacial.png" alt=""></a></div>
+            <div class="col"><a href="" class="brand-link"><img src="./img/brands/geneo.png" alt=""></a></div>
+            <div class="col"><a href="" class="brand-link"><img src="./img/brands/annalotan.png" alt=""></a></div>
+            <div class="col"><a href="" class="brand-link"><img src="./img/brands/mariagalland.png" alt=""></a></div>
+            <div class="col"><a href="" class="link-curve brand-link_all">Узнать подробнее</a></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_contacts">
+        <div class="section_contacts__marker"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-12 col-lg-8 col-xl-6 anim-right">
+              <div class="section_contacts__wrap">
+                <header><h2 class="section__title">Контакты</h2></header>
+                <ul class="list-contacts">
+                  <li>
+                    <svg><use xlink:href="./img/sprite.svg#call"></use></svg>
+                    <span><a href="tel:+79174921177">8 917 492 11 77</a></span>
+                  </li>
+                  <li>
+                    <svg><use xlink:href="./img/sprite.svg#location"></use></svg>
+                    <span>г. Уфа, ул. Октябрьской Революции д. 31А, офис 10</span>
+                  </li>
+                  <li>
+                    <svg><use xlink:href="./img/sprite.svg#clock"></use></svg>
+                    <span>Ежедневно с 9:00 до 21:00</span>
+                  </li>
+                  <li>
+                    <svg><use xlink:href="./img/sprite.svg#email"></use></svg>
+                    <span><a href="mailto:resteticaufa@yandex.ru">resteticaufa@yandex.ru</a></span>
+                  </li>
+                </ul>
+                <div class="social">
+                  <a href=""><svg><use xlink:href="./img/sprite.svg#whatsapp"></use></svg></a>
+                  <a href="" class="_vk"><svg><use xlink:href="./img/sprite.svg#vk"></use></svg></a>
+                  <a href=""><svg><use xlink:href="./img/sprite.svg#telegram"></use></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top anim-up">
+          <div class="row row-cols-2 row-cols-lg-3">
+            <div class="col">
+              <div class="footer__logo"><img src="./img/logo-footer.svg" alt=""></div>
+              <ul class="list-contacts">
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#eye"></use></svg>
+                  <span><a href="">Версия для слабовидящих</a></span>
+                </li>
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#doc"></use></svg>
+                  <span><a href="">Лицензия на медицинскую деятельность</a></span>
+                </li>
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#doc"></use></svg>
+                  <span><a href="">Политика в отношении обработки персональных данных</a></span>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <div class="footer__form">
+                <h5 class="footer__header">Подпишитесь на рассылку</h5>
+                <div class="form">
+                  <input class="input" type="email" placeholder="Ваш email">
+                  <button title="Подписаться">
+                    <svg><use xlink:href="./img/sprite.svg#circle-btn"></use></svg>
+                  </button>
+                </div>
+              </div>
+              <h5 class="footer__header">Номер телефона</h5>
+              <ul class="list-contacts">
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#call"></use></svg>
+                  <span><a href="tel:+79174921177">8 (917) 492-11-77</a></span>
+                </li>
+              </ul>
+              <h5 class="footer__header">Электронная почта</h5>
+              <ul class="list-contacts">
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#email"></use></svg>
+                  <span><a href="mailto:resteticaufa@yandex.ru">resteticaufa@yandex.ru</a></span>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5 class="footer__header">Социальные сети</h5>
+              <div class="social">
+                <a href=""><svg><use xlink:href="./img/sprite.svg#whatsapp"></use></svg></a>
+                <a href="" class="_vk"><svg><use xlink:href="./img/sprite.svg#vk"></use></svg></a>
+                <a href=""><svg><use xlink:href="./img/sprite.svg#telegram"></use></svg></a>
+              </div>
+              <h5 class="footer__header">Адрес</h5>
+              <ul class="list-contacts">
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#location"></use></svg>
+                  <span>г. Уфа, ул. Октябрьской Революции д. 31А, офис 10</span>
+                </li>
+              </ul>
+              <h5 class="footer__header">График работы</h5>
+              <ul class="list-contacts">
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#clock"></use></svg>
+                  <span>Ежедневно с 9:00 до 21:00</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer__main">
+          <div class="row row-cols-2 row-cols-xl-5">
+            
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">О клинике</a></li>
+                  <li><a href="">О нас</a></li>
+                  <li><a href="">Специалисты</a></li>
+                  <li><a href="">Документы и лицензии</a></li>
+                  <li><a href="">Бренды и аппараты</a></li>
+                  <li><a href="">Фотогалерея</a></li>
+              </ul>
+            </div>
+            
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Услуги</a></li>
+                  <li><a href="">Эстетическая косметология</a></li>
+                  <li><a href="">Аппаратная косметология</a></li>
+                  <li><a href="">Инъекционная косметология</a></li>
+                  <li><a href="">Услуги по телу</a></li>
+                  <li><a href="">Трихология</a></li>
+                  <li><a href="">Интимное омоложение</a></li>
+                  <li><a href="">Мужская косметология</a></li>
+              </ul>
+            </div>
+            
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Акции</a></li>
+                  <li><a href="">Акции</a></li>
+                  <li><a href="">Премиальные карты</a></li>
+                  <li><a href="">Подарочные сертификаты</a></li>
+              </ul>
+            </div>
+            
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Нам доверяют</a></li>
+                  <li><a href="">До и после</a></li>
+                  <li><a href="">Отзывы</a></li>
+              </ul>
+            </div>
+            
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Бренды и аппараты</a></li>
+                  <li><a href="">DEKA Motys AY</a></li>
+                  <li><a href="">DEKA Onda</a></li>
+                  <li><a href="">DEKA Schwarzy</a></li>
+                  <li><a href="">DEKA SmartXide Punto</a></li>
+                  <li><a href="">InMode</a></li>
+                  <li><a href="">Ultraformer</a></li>
+                  <li><a href="">HydraFacial</a></li>
+                  <li><a href="">GeneO+</a></li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Эстетическая косметология</a></li>
+                <li><a href="">Комплексная чистка</a></li>
+                <li><a href="">Ультразвуковая чистка</a></li>
+                <li><a href="">Пилинги</a></li>
+                <li><a href="">Уходовые процедуры на косметике Maria Galland и Anna lotan</a></li>
+                <li><a href="">Фонофорез</a></li>
+                <li><a href="">Микротоковая терапия</a></li>
+                <li><a href="">Парафинотерапия</a></li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Аппаратная косметология</a></li>
+                <li><a href="">Аппаратный лифтинг</a></li>
+                <li><a href="">Аппаратное омоложение</a></li>
+                <li><a href="">Лазерная эпиляция</a></li>
+                <li><a href="">Удаление пигментов</a></li>
+                <li><a href="">Удаление сосудов</a></li>
+                <li><a href="">Аппаратный уход</a></li>
+                <li><a href="">Удаление доброкачественных новообразований</a></li>
+                <li><a href="">LED-терапия</a></li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Инъекционная косметология</a></li>
+                <li><a href="">Бланширование</a></li>
+                <li><a href="">Мезотерапия</a></li>
+                <li><a href="">Плазмотерапия</a></li>
+                <li><a href="">Биоревитализация</a></li>
+                <li><a href="">Ботулинотерапия</a></li>
+                <li><a href="">Контурная пластика</a></li>
+                <li><a href="">Коллагенотерапия</a></li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Услуги по телу</a></li>
+                <li><a href="">Беззоперационная липосакция и лифтинг</a></li>
+                <li><a href="">Массаж</a></li>
+                <li><a href="">Обертывание</a></li>
+                <li><a href="">Прокол ушей</a></li>
+                <li><a href="">Коррекция фигуры</a></li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Трихология</a></li>
+                <li><a href="">Плазмотерапия</a></li>
+                <li><a href="">Мезотерапия</a></li>
+                <li><a href="">Микротоковая терапия</a></li>
+                <li><a href="">Дарсонваль</a></li>
+              </ul>
+
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Интимные процедуры</a></li>
+                <li><a href="">Интимное омоложение</a></li>
+              </ul>
+            </div>
+          
+          </div>
+        </div>
+
+        <div class="footer__bottom">Имеются противопоказания, необходима консультация специалиста</div>
+      </div>
+    </footer>
+
+  </div><!-- End .wrapper -->
+
+
+  <button class="totop" title="Наверх">
+    <svg>
+      <use xlink:href="./img/sprite.svg#totop"></use>
+    </svg>
+  </button>
+
+  
+  <div class="modal hidden">
+    <div class="modal__wrap">
+        <button class="modal__close-btn" aria-label="Закрыть">×</button>
+        <div class="modal__content">
+          <h3 class="modal__title">Оставьте свои данные</h3>
+          <p class="modal__text">Мы свяжемся с вами и ответим на все вопросы</p>
+          <form>
+            <div class="form">
+              <div class="form__group">
+                <input class="input" type="text" placeholder="Ваше имя">
+              </div>
+              <div class="form__group">
+                <input class="input" type="tel" placeholder="Номер телефона">
+              </div>
+              <div class="form__group">
+                <textarea class="input" rows="4" placeholder="Ваш комментарий"></textarea>
+              </div>
+              <div class="form__group">
+                <div class="form__agree">Нажимая на кнопку, я даю свое согласие на обработку моих персональных данных</div>
+              </div>
+              <div class="form__group form__group-2btn">
+                <button class="btn">Отправить</button>
+                <a href="" class="link-arrow">Или написать нам <br>в WhatsApp</a>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/gsap/gsap.min.js"></script>
+  <script src="./js/gsap/ScrollTrigger.min.js"></script>
+  <script src="./js/gsap/app.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restetica</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Manrope:wght@400;500;600&display=swap" rel="preload" as="style" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" crossorigin>
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col header__search">
+            <div class="search">
+              <input id="search" type="text" class="search__input" placeholder="Поиск">
+              <button class="btn">Искать</button>
+            </div>
+          </div>
+          
+          <div class="col header__logo">
+            <a href="" class="logo">
+              <img src="./img/logo.svg" alt="">
+            </a>
+          </div>
+
+          <div class="col social header__social">
+            <a href=""><svg><use xlink:href="./img/sprite.svg#whatsapp"></use></svg></a>
+            <a href="" class="_vk"><svg><use xlink:href="./img/sprite.svg#vk"></use></svg></a>
+            <a href=""><svg><use xlink:href="./img/sprite.svg#telegram"></use></svg></a>
+          </div>
+        
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar__list" data-nav>
+          <li class="navbar__item _inner">
+            <a href="">О клинике</a>
+            <span>
+              <ul class="second-menu">
+                <li><a href="">О нас</a></li>
+                <li><a href="">Специалисты</a></li>
+                <li><a href="">Документы и лицензии</a></li>
+                <li class="_inner2">
+                  <a href="">Бренды и аппараты</a>
+                  <ul class="third-menu">
+                    <li><a href="">MOTUS AY</a></li>
+                    <li><a href="">INMODE</a></li>
+                    <li><a href="">UltraFormer III</a></li>
+                    <li><a href="">HydraFacial</a></li>
+                    <li><a href="">GeneO+</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Фотогалерея</a></li>
+              </ul>
+            </span>
+          </li>
+          <li class="navbar__item"><a href="">Услуги</a></li>
+          <li class="navbar__item"><a href="">Акции</a></li>
+          <li><a href="">Прайс</a></li>
+          <li><a href="">Новости</a></li>
+          <li class="navbar__item"><a href="">Нам доверяют</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <a class="btn btn-modal" href="">Заказать звонок</a>
+      </div>
+    </nav>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span class="burger__line"></span>
+    </button>
+
+    <main class="page">
+
+      <div class="page__header" style="background-image: url(./img/header-4.jpg);">
+        <div class="container">
+          <header><h1 class="page__title">Акции и предложения</h1></header>
+          <div class="breadcrumbs">
+              <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Акции</a></li>
+                <li class="_active">Акции и предложения</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="promo promo_category">
+        <div class="container">
+          <div class="row row-cols-lg-2">
+            <div class="col promo__text _background-color">
+              <header><h2 class="promo__title">Акции и предложения</h2></header>
+              <div class="content">
+                <p>Наслаждайтесь специальными предложениями и скидками на процедуры по уходу за вашим лицом, телом и волосами.
+                  Раскройте в себе красоту!</p>
+              </div>
+            </div>
+            <div class="col promo__img">
+              <div class="promo__img-wrap">
+                <img src="./img/actions/p01.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section section_wrap-3">
+        
+        <section class="promo promo_sample">
+          <div class="container">
+            <div class="row row-cols-lg-2">
+              <div class="col promo__text _background-color">
+                <header><h2 class="promo__title">Скидка 15% на инъекции</h2></header>
+                <div class="content">
+                  <p>Преобразите свое лицо с помощью процедур <a href="" class="gold">биоревитализации</a> + <a href="" class="gold">бланширования</a>  со скидкой 15%</p>
+                </div>
+                <a class="btn" href="">Воспользоваться предложением</a>
+              </div>
+              <div class="col promo__img">
+                <img src="./img/actions/p02.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="promo promo_sample">
+          <div class="container">
+            <div class="row row-cols-lg-2">
+              <div class="col promo__text _background-color">
+                <header><h2 class="promo__title">Скидка 15% на процедуры для волос</h2></header>
+                <div class="content">
+                  <p>Подарите своим волосам роскошный уход с процедурами <a href="" class="gold">мезотерапии для волос</a> + <a href="" class="gold">LED-терапии</a> + косметики для волос DSD</p>
+                </div>
+                <a class="btn" href="">Воспользоваться предложением</a>
+              </div>
+              <div class="col promo__img">
+                <img src="./img/actions/p03.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="promo promo_sample">
+          <div class="container">
+            <div class="row row-cols-lg-2">
+              <div class="col promo__text _background-color">
+                <header><h2 class="promo__title">Скидка 15% на процедуры для тела</h2></header>
+                <div class="content">
+                  <p>Скидка на высокоэффективный уход для тела: <a href="" class="gold">массаж</a> + <a href="" class="gold">процедура на аппарате Onda</a></p>
+                </div>
+                <a class="btn" href="">Воспользоваться предложением</a>
+              </div>
+              <div class="col promo__img">
+                <img src="./img/actions/p04.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="promo promo_sample">
+          <div class="container">
+            <div class="row row-cols-lg-2">
+              <div class="col promo__text _background-color">
+                <header><h2 class="promo__title">Скидка 15% на комплексный уход</h2></header>
+                <div class="content">
+                  <p>Акция на аппаратный + инъекционный уход: скидка 15% на процедуры на аппарате <a href="" class="gold">Ultraformer</a> или <a href="" class="gold">InMode (Morpheus 8)</a>, а так же плюс на инъекции филлером AestheFill или Radiesse.</p>
+                </div>
+                <a class="btn" href="">Воспользоваться предложением</a>
+              </div>
+              <div class="col promo__img">
+                <img src="./img/actions/p05.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="promo promo_sample">
+          <div class="container">
+            <div class="row row-cols-lg-2">
+              <div class="col promo__text _background-color">
+                <header><h2 class="promo__title">3 по цене 2 на эпиляцию</h2></header>
+                <div class="content">
+                  <p>При записи на <a href="" class="gold">эпиляцию</a> двух зон, третью вы получаете в подарок!</p>
+                </div>
+                <a class="btn" href="">Воспользоваться предложением</a>
+              </div>
+              <div class="col promo__img">
+                <img src="./img/actions/p06.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="promo promo_sample">
+          <div class="container">
+            <div class="row row-cols-lg-2">
+              <div class="col promo__text _background-color">
+                <header><h2 class="promo__title">Скидка 20% на ботулинотерапию</h2></header>
+                <div class="content">
+                  <p>Скидка 20% на <a href="" class="gold">ботулинотерапию</a> с диспортом от 100 единиц</p>
+                </div>
+                <a class="btn" href="">Воспользоваться предложением</a>
+              </div>
+              <div class="col promo__img">
+                <img src="./img/actions/p07.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="promo promo_sample">
+          <div class="container">
+            <div class="row row-cols-lg-2">
+              <div class="col promo__text _background-color">
+                <header><h2 class="promo__title">Скидка 25% <br>на RF-лифтинг</h2></header>
+                <div class="content">
+                  <p>При покупке курса из 10 процедур RF-лифтинга на аппарате <a href="" class="gold">InMode</a>, вы получаете скидку 25%</p>
+                </div>
+                <a class="btn" href="">Воспользоваться предложением</a>
+              </div>
+              <div class="col promo__img">
+                <img src="./img/actions/p08.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="promo promo_sample">
+          <div class="container">
+            <div class="row row-cols-lg-2">
+              <div class="col promo__text _background-color">
+                <header><h2 class="promo__title">Скидка 15% на процедуры для лица</h2></header>
+                <div class="content">
+                  <p>Акция на аппаратный + инъекционный уход: скидка 15% на процедуры на аппарате <a href="" class="gold">HydraFacial</a> или <a href="" class="gold">GeneO+</a>, а так же плюс на <a href="" class="gold">мезотерапию</a>.</p>
+                </div>
+                <a class="btn" href="">Воспользоваться предложением</a>
+              </div>
+              <div class="col promo__img">
+                <img src="./img/actions/p09.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="row row-cols-2 row-cols-lg-3">
+            <div class="col">
+              <div class="footer__logo"><img src="./img/logo-footer.svg" alt=""></div>
+              <ul class="list-contacts">
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#eye"></use></svg>
+                  <span><a href="">Версия для слабовидящих</a></span>
+                </li>
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#doc"></use></svg>
+                  <span><a href="">Лицензия на медицинскую деятельность</a></span>
+                </li>
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#doc"></use></svg>
+                  <span><a href="">Политика в отношении обработки персональных данных</a></span>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <div class="footer__form">
+                <h5 class="footer__header">Подпишитесь на рассылку</h5>
+                <div class="form">
+                  <input class="input" type="email" placeholder="Ваш email">
+                  <button title="Подписаться">
+                    <svg><use xlink:href="./img/sprite.svg#circle-btn"></use></svg>
+                  </button>
+                </div>
+              </div>
+              <h5 class="footer__header">Номер телефона</h5>
+              <ul class="list-contacts">
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#call"></use></svg>
+                  <span><a href="tel:+79174921177">8 (917) 492-11-77</a></span>
+                </li>
+              </ul>
+              <h5 class="footer__header">Электронная почта</h5>
+              <ul class="list-contacts">
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#email"></use></svg>
+                  <span><a href="mailto:resteticaufa@yandex.ru">resteticaufa@yandex.ru</a></span>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5 class="footer__header">Социальные сети</h5>
+              <div class="social">
+                <a href=""><svg><use xlink:href="./img/sprite.svg#whatsapp"></use></svg></a>
+                <a href="" class="_vk"><svg><use xlink:href="./img/sprite.svg#vk"></use></svg></a>
+                <a href=""><svg><use xlink:href="./img/sprite.svg#telegram"></use></svg></a>
+              </div>
+              <h5 class="footer__header">Адрес</h5>
+              <ul class="list-contacts">
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#location"></use></svg>
+                  <span>г. Уфа, ул. Октябрьской Революции д. 31А, офис 10</span>
+                </li>
+              </ul>
+              <h5 class="footer__header">График работы</h5>
+              <ul class="list-contacts">
+                <li>
+                  <svg><use xlink:href="./img/sprite.svg#clock"></use></svg>
+                  <span>Ежедневно с 9:00 до 21:00</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer__main">
+          <div class="row row-cols-2 row-cols-xl-5">
+            
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">О клинике</a></li>
+                  <li><a href="">О нас</a></li>
+                  <li><a href="">Специалисты</a></li>
+                  <li><a href="">Документы и лицензии</a></li>
+                  <li><a href="">Бренды и аппараты</a></li>
+                  <li><a href="">Фотогалерея</a></li>
+              </ul>
+            </div>
+            
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Услуги</a></li>
+                  <li><a href="">Эстетическая косметология</a></li>
+                  <li><a href="">Аппаратная косметология</a></li>
+                  <li><a href="">Инъекционная косметология</a></li>
+                  <li><a href="">Услуги по телу</a></li>
+                  <li><a href="">Трихология</a></li>
+                  <li><a href="">Интимное омоложение</a></li>
+                  <li><a href="">Мужская косметология</a></li>
+              </ul>
+            </div>
+            
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Акции</a></li>
+                  <li><a href="">Акции</a></li>
+                  <li><a href="">Премиальные карты</a></li>
+                  <li><a href="">Подарочные сертификаты</a></li>
+              </ul>
+            </div>
+            
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Нам доверяют</a></li>
+                  <li><a href="">До и после</a></li>
+                  <li><a href="">Отзывы</a></li>
+              </ul>
+            </div>
+            
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Бренды и аппараты</a></li>
+                  <li><a href="">DEKA Motys AY</a></li>
+                  <li><a href="">DEKA Onda</a></li>
+                  <li><a href="">DEKA Schwarzy</a></li>
+                  <li><a href="">DEKA SmartXide Punto</a></li>
+                  <li><a href="">InMode</a></li>
+                  <li><a href="">Ultraformer</a></li>
+                  <li><a href="">HydraFacial</a></li>
+                  <li><a href="">GeneO+</a></li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Эстетическая косметология</a></li>
+                <li><a href="">Комплексная чистка</a></li>
+                <li><a href="">Ультразвуковая чистка</a></li>
+                <li><a href="">Пилинги</a></li>
+                <li><a href="">Уходовые процедуры на косметике Maria Galland и Anna lotan</a></li>
+                <li><a href="">Фонофорез</a></li>
+                <li><a href="">Микротоковая терапия</a></li>
+                <li><a href="">Парафинотерапия</a></li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Аппаратная косметология</a></li>
+                <li><a href="">Аппаратный лифтинг</a></li>
+                <li><a href="">Аппаратное омоложение</a></li>
+                <li><a href="">Лазерная эпиляция</a></li>
+                <li><a href="">Удаление пигментов</a></li>
+                <li><a href="">Удаление сосудов</a></li>
+                <li><a href="">Аппаратный уход</a></li>
+                <li><a href="">Удаление доброкачественных новообразований</a></li>
+                <li><a href="">LED-терапия</a></li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Инъекционная косметология</a></li>
+                <li><a href="">Бланширование</a></li>
+                <li><a href="">Мезотерапия</a></li>
+                <li><a href="">Плазмотерапия</a></li>
+                <li><a href="">Биоревитализация</a></li>
+                <li><a href="">Ботулинотерапия</a></li>
+                <li><a href="">Контурная пластика</a></li>
+                <li><a href="">Коллагенотерапия</a></li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Услуги по телу</a></li>
+                <li><a href="">Беззоперационная липосакция и лифтинг</a></li>
+                <li><a href="">Массаж</a></li>
+                <li><a href="">Обертывание</a></li>
+                <li><a href="">Прокол ушей</a></li>
+                <li><a href="">Коррекция фигуры</a></li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Трихология</a></li>
+                <li><a href="">Плазмотерапия</a></li>
+                <li><a href="">Мезотерапия</a></li>
+                <li><a href="">Микротоковая терапия</a></li>
+                <li><a href="">Дарсонваль</a></li>
+              </ul>
+
+              <ul class="footer__menu">
+                <li class="footer__header"><a href="">Интимные процедуры</a></li>
+                <li><a href="">Интимное омоложение</a></li>
+              </ul>
+            </div>
+          
+          </div>
+        </div>
+
+        <div class="footer__bottom">Имеются противопоказания, необходима консультация специалиста</div>
+      </div>
+    </footer>
+
+  </div><!-- End .wrapper -->
+
+
+  <button class="totop" title="Наверх">
+    <svg>
+      <use xlink:href="./img/sprite.svg#totop"></use>
+    </svg>
+  </button>
+  
+  <div class="modal hidden">
+    <div class="modal__wrap">
+        <button class="modal__close-btn" aria-label="Закрыть">×</button>
+        <div class="modal__content">
+          <h3 class="modal__title">Оставьте свои данные</h3>
+          <p class="modal__text">Мы свяжемся с вами и ответим на все вопросы</p>
+          <form>
+            <div class="form">
+              <div class="form__group">
+                <input class="input" type="text" placeholder="Ваше имя">
+              </div>
+              <div class="form__group">
+                <input class="input" type="tel" placeholder="Номер телефона">
+              </div>
+              <div class="form__group">
+                <textarea class="input" rows="4" placeholder="Ваш комментарий"></textarea>
+              </div>
+              <div class="form__group">
+                <div class="form__agree">Нажимая на кнопку, я даю свое согласие на обработку моих персональных данных</div>
+              </div>
+              <div class="form__group form__group-2btn">
+                <button class="btn">Отправить</button>
+                <a href="" class="link-arrow">Или написать нам <br>в WhatsApp</a>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+
+
+  <script src="./js/main.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+</body>
+</html>
