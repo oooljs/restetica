@@ -24,7 +24,7 @@ if (ScrollTrigger.isTouch !== 1) {
   let itemsLeft = gsap.utils.toArray('.anim-left');
 
 	itemsLeft.forEach(item => {
-		gsap.fromTo(item, { opacity: 0, x: -160 }, {
+		gsap.fromTo(item, { opacity: 0, x: -100 }, {
 			opacity: 1, x: 0,
 			scrollTrigger: {
 				trigger: item,
@@ -38,7 +38,7 @@ if (ScrollTrigger.isTouch !== 1) {
   let itemsRight = gsap.utils.toArray('.anim-right');
 
 	itemsRight.forEach(item => {
-		gsap.fromTo(item, { opacity: 0, x: 160 }, {
+		gsap.fromTo(item, { opacity: 0, x: 100 }, {
 			opacity: 1, x: 0,
 			scrollTrigger: {
 				trigger: item,
