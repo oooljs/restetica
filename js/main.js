@@ -86,6 +86,36 @@ const init = () => {
     return;
   });
 
+  // procedures
+  const procSection = document?.querySelector(".promo-select");
+  const procParent = procSection.closest('.promo__text');
+  const procLinks = document?.querySelectorAll(".link-procedures");
+  procLinks.forEach(link =>
+    link.addEventListener( 'mouseenter', () => {
+      procLinks.forEach(link => {
+        link.classList.remove('_active');
+      })
+      link.classList.add('_active');
+      procParent.classList.add('_show');
+    })
+  );
+
+  function procClear() {
+    procLinks.forEach(link => {
+      link.classList.remove('_active');
+    })
+    procParent.classList.remove('_show');
+  }
+
+  function clickOutside(el, cb) {
+    document.addEventListener('click', event => {
+      if (!el.contains(event.target)) cb();
+    });
+  };
+
+  clickOutside(procSection, () => procClear());
+
+
   // load more
   const loadMore = document?.querySelector('.load__btn'); 
 
@@ -175,7 +205,7 @@ const init = () => {
     })
   });
 
-  // svg plan hover
+  // svg plan click
 
   const paths = document?.querySelectorAll('path.room');
 
@@ -185,7 +215,6 @@ const init = () => {
   
   function displayGallery(e) {
     let name = e.target.dataset.name;
-    console.log(name);
     document.getElementById(name).click();
   }
 
