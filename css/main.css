@@ -1644,6 +1644,9 @@ body .gold {
     height: 450px;
     left: 0;
   }
+  .slider-big__title {
+    font-size: 36px;
+  }
 }
 
 .section_brands {
@@ -1946,19 +1949,6 @@ body .gold {
   margin: 0 0 10px -35px;
 }
 
-.promo .promo__text._show {
-  z-index: 22;
-}
-
-.promo ._show::after {
-  display: none;
-}
-
-.promo ._show .promo-select,
-._show .promo-select .list-drops {
-  position: static;
-}
-
 .promo-select .list-drops {
   margin: 100px 0 10px;
 }
@@ -1982,10 +1972,10 @@ body .gold {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 635px;
+    width: 540px;
     left: 100%;
-    padding: 30px 40px;
-    margin-left: 15px;
+    padding: 1px 20px;
+    margin-left: 5px;
     border-radius: 0 100px 0 0;
     visibility: hidden;
     opacity: 0;
@@ -2012,13 +2002,40 @@ li._active .procedures {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 .procedures .list-dot>li:hover {
   color: var(--color-active);
 }
 
+@media (min-width: 992px) {
+  .promo .promo__text._show {
+    z-index: 22;
+  }
+  .promo ._show::after {
+    display: none;
+  }
+  .promo ._show .promo-select,
+  ._show .promo-select .list-drops {
+    position: static;
+  }
+  .procedures .list-dot>li {
+    margin-bottom: 8px;
+  }
+}
 
+@media (min-width: 1200px) {
+  .promo-select .procedures {
+    background-color: var(--color-light-2);
+    width: 635px;
+    padding: 30px 40px;
+    margin-left: 15px;
+  }
+  .procedures .list-dot>li {
+    margin-bottom: 15px;
+  }
+}
 
 
 
